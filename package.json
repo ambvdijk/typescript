@@ -4,8 +4,11 @@
   "description": "TypeScript Tools & Extensions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-     "tsc": "tsc -p tsconfig.json"
+    "tsc": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
