@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+      "allowJs": false,
+      "allowUnreachableCode": false,
+      "declaration": true,
+      "esModuleInterop": true,
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "sourceMap": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "target": "es6",
+      "useUnknownInCatchVariables": true,
+      "baseUrl": "./",
+      "outDir": "./lib",
+      "rootDir": "./src"
+    },
+    "include": [
+      "./src"
+    ],
+    "exclude": [
+      "node_modules",
+      "**/*.test.ts",
+    ]
+}

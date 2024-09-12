@@ -1,0 +1,20 @@
+{
+  "name": "@ambvdijk/typescript",
+  "version": "0.1.0",
+  "description": "TypeScript Tools & Extensions",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+     "tsc": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ambvdijk/typescript.git"
+  },
+  "author": "https://github.com/ambvdijk",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.6.2",
+    "vitest": "^2.0.5"
+  }
+}
