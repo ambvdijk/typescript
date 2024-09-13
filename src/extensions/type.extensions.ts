@@ -8,7 +8,7 @@ export const typeOfObject = "Object";
 export const isTypeOf = (item: unknown, type: string) =>
   Object.prototype.toString.call(item) === `[object ${type}]`;
 
-export const isObject = (item: unknown): item is Object =>
+export const isObject = (item: unknown): item is object =>
   isTypeOf(item, typeOfObject);
 
 export const isString = (item: unknown): item is string =>
