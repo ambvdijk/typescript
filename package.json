@@ -1,18 +1,22 @@
 {
   "name": "@ambvdijk/typescript",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "TypeScript Tools & Extensions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
+  "keywords": ["typescript"],
   "scripts": {
     "tsc": "tsc -p tsconfig.json"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ambvdijk/typescript.git"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "https://github.com/ambvdijk",
   "license": "MIT",

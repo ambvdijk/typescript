@@ -1,4 +1,5 @@
-import { extensions } from "./extensions";
+import * as typeExtensions from "./extensions/type.extensions";
+import * as stringExtensions from "./extensions/string.extensions";
 
 /**
  * Throws an exception when item is null or undefined
@@ -6,7 +7,7 @@ import { extensions } from "./extensions";
  * @param errorMessage The error message when when validation fails
  */
 export function isNotNullOrUndefined<T>(item: T | null | undefined, errorMessage: string): item is T {
-  if (extensions.type.isNullOrUndefined(item)) {
+  if (typeExtensions.isNullOrUndefined(item)) {
     throw Error(errorMessage);
   }
 
@@ -19,7 +20,7 @@ export function isNotNullOrUndefined<T>(item: T | null | undefined, errorMessage
  * @param errorMessage The error message when when validation fails
  */
 export function isNotEmptyString(item: unknown, errorMessage: string): item is string {
-  if (!extensions.type.isString(item) || extensions.string.isEmpty(item)) {
+  if (!typeExtensions.isString(item) || stringExtensions.isEmpty(item)) {
     throw Error(errorMessage);
   }
   return true;

@@ -1,2 +1,3 @@
-export * as guard from './guard';
-export * as extensions from './extensions';
+export * as Guard from "./guard";
+export * as Extensions from "./extensions";
+export * from './extensions';
