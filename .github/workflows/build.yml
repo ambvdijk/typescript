@@ -22,3 +22,9 @@ jobs:
       - name: Lint
         run: npm run lint
 
+      - name: Get latest release number
+        run: echo "LATEST_RELEASE=$(git describe --tags --abbrev=0)" >> $GITHUB_ENV
+
+      - name: Test
+        run: echo $LATEST_RELEASE
+
