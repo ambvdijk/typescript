@@ -1,5 +1,5 @@
 const ciTestSetup = {
-  reporters: ['junit', 'json', 'verbose'],
+  reporters: ['junit', 'json', 'verbose', 'github-actions'],
   outputFile: {
     junit: './junit-report.xml',
     json: './json-report.json',
