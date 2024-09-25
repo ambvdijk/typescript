@@ -1,3 +1,6 @@
+/// <reference types="vitest" />
+import { defineConfig } from 'vite'
+
 const ciTestSetup = {
   reporters: ['junit', 'json', 'verbose', 'github-actions'],
   outputFile: {
